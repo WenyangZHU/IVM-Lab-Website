@@ -1,0 +1,49 @@
+p.contact
+{
+	color:#000000;
+	font-size:22px;
+	font_family:"Times New Roman";		
+}
+
+p.name
+{
+	color:#000000;
+	font-size:14px;
+	font_family:"Times New Roman";		
+}
+
+h1.menu_h
+{
+	color:#606060;
+    font-size:25px;
+	font_family:"Times New Roman";
+} 
+
+p.menu_p
+{
+    color:#606060;
+	font-size:18px;
+	background:#0090F9;
+	font_family:"Times New Roman";
+}
+
+p.detail_p
+{
+	color:#606060;
+	font-size:20px;
+	font_family:"Times New Roman";
+}
+
+h1.detail_h
+{
+	color:firebrick;
+	font-size:25px;
+	font_family:"Times New Roman";
+}
+
+.detail_sub
+{
+	color:black;
+	font-size:18px;
+	font-family:"Times New Roman";
+}

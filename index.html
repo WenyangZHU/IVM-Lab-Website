@@ -1,0 +1,133 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"> 
+<title>2016 Summer Intern</title>
+<script src="js/d3.v3.min.js" charset="utf-8"></script>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/stylesCode.css">
+</head>
+
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+<body style="background:#0055A2">
+<script>
+var choose = 1;
+function change(i){
+	if (i==1){
+		document.getElementById('1').style="color:red";
+		document.getElementById('2').style="color:#606060";
+		document.getElementById('3').style="color:#606060";
+		document.getElementById('4').style="color:#606060";
+		detail_page.location="detail.html#first";
+		choose = 1;
+	}
+	else if (i==2){
+		document.getElementById('1').style="color:#606060";
+		document.getElementById('2').style="color:red";
+		document.getElementById('3').style="color:#606060";
+		document.getElementById('4').style="color:#606060";
+		detail_page.location="detail.html#second";
+		choose = 2;
+	}
+	else if (i==3){
+		document.getElementById('1').style="color:#606060";
+		document.getElementById('2').style="color:#606060";
+		document.getElementById('3').style="color:red";
+		document.getElementById('4').style="color:#606060";
+		detail_page.location="detail.html#third";
+		choose = 3;
+	}
+	else if (i==4){
+		document.getElementById('1').style="color:#606060";
+		document.getElementById('2').style="color:#606060";
+		document.getElementById('3').style="color:#606060";
+		document.getElementById('4').style="color:red";
+		detail_page.location="detail.html#fourth";
+		choose = 4;
+	}
+}
+
+function Show(i){ 
+	//if (choose == i){
+	//	document.getElementById(i).style="color:yellow;background:#0090F9";
+	//}
+	document.getElementById(i).style="color:yellow;background:#0090F9";
+}
+
+function Hide(i){ 
+	if (choose == i){
+		document.getElementById(i).style="color:red;background:#0090F9";
+	}
+	else document.getElementById(i).style="color:#606060;background:#0090F9";
+}
+
+function play(i){
+	document.getElementById("r1").Play();
+	document.getElementById("r2").Play();
+}
+/*
+document.onmousemove = function(e){
+e=e||window.event;
+var oLeft=e.clientX+'px';
+var oTop=e.clientY+'px';
+console.log(oLeft+','+oTop);
+}
+*/
+</script>
+
+<div style="position:absolute;background:#0055A2;width:1280px;left:25px;right:25px;top:15px;z-index:100">
+	<div style="position:relative;width:95%;left:2.5%;right:2.5%;z-index:100;backgroundImage:url(images/scene_1.JPG)">
+		<a href="http://min.sjtu.edu.cn"><img src="images/logo.svg" style="position:relative;height:70px;width:300px" align="left"/></a>
+		<img src="images/scene_1.png" style="position:relative;width:640px;height:75px"/>
+		<a href="http://www.sjtu.edu.cn"><img src="images/sjtu.svg" style="height:90px;width:260px" align="right"/></a>
+	</div>
+	<hr style="FILTER: progid:DXImageTransform.Microsoft.Glow(color=#987cb9,strength=10)" width="95%" color=#987cb9 SIZE=1>
+	<div style="position:relative;background:#0090F9;width:95%;height:480px;left:2.5%;right:2.5%;top:5;z-index:100">
+		<div style="position:relative;background:#0090F9;width:15%;left:1%;top:5;z-index:100">
+			<h1 class="menu_h" >Research</h1>			
+			<div class="ovrly03">
+				<p class="menu_p" id="1" style="color:red">·Abstract</p>
+				<div class="ovrlyT" onMouseOver=Show(1) onMouseOut=Hide(1) onclick=change(1)></div>
+				<div class="ovrlyB" onMouseOver=Show(1) onMouseOut=Hide(1) onclick=change(1)></div>
+            </div>
+			<div class="ovrly03">
+				<p class="menu_p" id="2">·Animation</p>
+				<div class="ovrlyT" onMouseOver=Show(2) onMouseOut=Hide(2) onclick=change(2)></div>
+				<div class="ovrlyB" onMouseOver=Show(2) onMouseOut=Hide(2) onclick=change(2)></div>
+            </div>
+			<div class="ovrly03">
+				<p class="menu_p" id="3">·Example</p>
+				<div class="ovrlyT" onMouseOver=Show(3) onMouseOut=Hide(3) onclick=change(3)></div>
+				<div class="ovrlyB" onMouseOver=Show(3) onMouseOut=Hide(3) onclick=change(3)></div>
+            </div>
+			<div class="ovrly03">
+				<p class="menu_p" id="4">·Download</p>
+				<div class="ovrlyT" onMouseOver=Show(4) onMouseOut=Hide(4) onclick=change(4)></div>
+				<div class="ovrlyB" onMouseOver=Show(4) onMouseOut=Hide(4) onclick=change(4)></div>
+            </div>
+			<!--
+			<p class="menu_p" id="1" onMouseOver=Show(2) onMouseOut=Hide(2) onclick=change(2) style="color:red">·Animation</p>
+			<p class="menu_p" id="2" onMouseOver=Show(2) onMouseOut=Hide(2) onclick=change(2)>·Animation</p>
+			<p class="menu_p" id="3" onMouseOver=Show(3) onMouseOut=Hide(3) onclick=change(3)>·Example</p>
+			<p class="menu_p" id="4" onMouseOver=Show(4) onMouseOut=Hide(4) onclick=change(4)>·Download</p>
+			-->
+		</div>
+		<iframe name="detail_page" src="detail.html" frameBorder=0 style="position:absolute;background:#FFFFFF;width:84%;left:16%;height:480px;top:0;z-index:100;border-left:5px ridge;border-right:5px ridge;padding:5 10 5 10"></iframe>
+		<div style="position:relative;background:#0090F9;width:15%;left:1%;top:25;z-index:100">
+		<p class="contact">Contact:</p>
+		<p class="name">Wenyang Zhu<br>wendyzhu823@163.com</p>
+		<p class="name">Yongzhuang Wang<br>2191117389@qq.com</p>
+		</div>
+	</div> 
+	<hr style="FILTER: progid:DXImageTransform.Microsoft.Glow(color=#987cb9,strength=10);position:relative;top:15" width="95%" color=#987cb9 SIZE=1>
+	<div style="position:relative;background:#0055A2;width:100%;left:0;top:10;z-index:100">
+		<div style="position:relative;background:#0055A2;width:70;left:45%;top:0;z-index:100">
+			<img src="images/flogo.png" style="margin=0 auto"/>
+		</div>
+		<div style="position:relative;background:#0055A2;width:500;left:30%;top:-10;z-index:100">
+			<p style="text-align:center;color:black<!--#606060-->;font_family:'Times New Roman'">Institute of Media, Information, and Network (MIN Lab)</p>	
+		</div>
+	</div>
+</div>
+
+</body>

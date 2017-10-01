@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>detail</title>
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/detail.css" />
+	<link rel="stylesheet" type="text/css" href="animation.css" />
+</head>
+
+<body>
+<script>
+function play(){
+	document.getElementById("r1").Play();
+	document.getElementById("r2").Play();
+}
+
+function check(){
+	var opt = document.getElementById("select").selectedIndex;
+	if (opt == 0){
+		t1 = document.getElementById("re1");
+		t1.style.display="none";
+		t2 = document.getElementById("r1");
+		t2.src="swf/BlowingBubbles.swf";
+		t1.style.display="";
+		t3 = document.getElementById("re2");
+		t3.style.display="none";
+		t4 = document.getElementById("r2");
+		t4.src="swf/re_BlowingBubbles.swf";
+		t3.style.display="";
+		t = document.getElementById("select_detail");
+		t.innerHTML="Video Name:BlowingBubbles, Resolution:416x240, Frequency:50Hz";
+	}
+	else if (opt == 1){
+		t1 = document.getElementById("re1");
+		t1.style.display="none";
+		t2 = document.getElementById("r1");
+		t2.src="swf/BQMall.swf";
+		t1.style.display="";
+		t3 = document.getElementById("re2");
+		t3.style.display="none";
+		t4 = document.getElementById("r2");
+		t4.src="swf/re_BQMall.swf";
+		t3.style.display="";
+		t = document.getElementById("select_detail");
+		t.innerHTML="Video Name:BQMall, Resolution:832x480, Frequency:60Hz";
+	}
+	else if (opt == 2){
+		t1 = document.getElementById("re1");
+		t1.style.display="none";
+		t2 = document.getElementById("r1");
+		t2.src="swf/foreman.swf";
+		t1.style.display="";
+		t3 = document.getElementById("re2");
+		t3.style.display="none";
+		t4 = document.getElementById("r2");
+		t4.src="swf/re_foreman.swf";
+		t3.style.display="";
+		t = document.getElementById("select_detail");
+		t.innerHTML="Video Name:Foreman, Resolution:352x288, Frequency:30Hz";
+	}
+	else if (opt == 3){
+		t1 = document.getElementById("re1");
+		t1.style.display="none";
+		t2 = document.getElementById("r1");
+		t2.src="swf/ParkScene.swf";
+		t1.style.display="";
+		t3 = document.getElementById("re2");
+		t3.style.display="none";
+		t4 = document.getElementById("r2");
+		t4.src="swf/re_ParkScene.swf";
+		t3.style.display="";
+		t = document.getElementById("select_detail");
+		t.innerHTML="Video Name:ParkScene, Resolution:1920x1080, Frequency:24Hz";
+	}
+}
+</script>
+
+<div id="fullpage">
+	<div class="section " id="section0" style="height:610px">
+		<h1 class="detail_h"> Progressive Dictionary Learning with Hierachical Predictive Structure</h1>
+		<p class="detail_p">
+		<br>
+		We proposed a sparse spatio-temporal representation
+		with adaptive regularized dictionary learning for
+		low bit-rate video coding. It acted in a reversed-complexity
+		Wyner-Ziv coding manner, where a subset of key frames serve
+		as a training dataset at the decoder side, while the remaining
+		frames are coded at low resolution.
+		<br><br>Specifically, a video frame 
+		was divided into three layers: a primitive layer, a nonprimitive
+		coarse layer, and a nonprimitive smooth layer. To make the
+		invertible reconstruction possible in a differential scale-space,
+		it was optimized by constructing a sparse representation of 2-D
+		patches and 3-D volumes over adaptive regularized dictionary
+		learning: a set of 2-D subdictionary pairs trained from primitive
+		patches and a 3-D dictionary trained from nonprimitive
+		volumes. Various sets of low-resolution or high-resolution
+		subdictionary pairs from the primitive patches were learned,
+		while the 3-D LF and HF dictionary pairs were generated
+		from motion-compensated frame interpolation and the K-SVD
+		algorithm for optimal sparse representation and convergence.
+		The lost high-frequency information of the non-key frames
+		can be synthesized over the adaptive regularized dictionaries.
+		The final high-resolution frames can be acquired by combining
+		all the high-frequency frames and low-frequency frames. 
+		<br><br>It is
+		superior to H.264 in terms of both objective and subjective
+		comparisons, especially in low bit-rate regions.
+		<br><br><br></p>
+	</div>
+	<div class="section" id="section1" style="height:610px">
+		<h1 class="detail_h"> Animation</h1>
+		<div id="animate_body">
+			<div id="div0"></div>
+			<div id="div_1_1" class="found m_1_1"></div>
+			<div id="div_1_2" class="found m_1_2"></div>
+			<div id="div_1_3" class="found m_1_3"></div>
+			<div id="div_1_4" class="found m_1_4"></div>
+			<div id="div_1_5" class="found m_1_5"></div>
+			<div id="div_1_6" class="found m_1_6"></div>
+			<p id="div_text_1_1" class="p text_1_1">输入帧序列</p>
+			<div id="div_line_1_1" class="found line_1_1"></div>
+			<div id="div_arrow_1_1" class="found arrow_1_1"></div>
+			<div id="div_box_1_1" class="found box_1_1">参考帧选择</div>
+			<div id="div_line_1_2" class="found line_1_2"></div>
+			<div id="div_arrow_1_2" class="found arrow_1_2"></div>
+			<div id="div_box_1_2" class="found box_1_2">降采样</div>
+			<div id="div_line_1_3" class="found line_1_3"></div>
+			<div id="div_arrow_1_3" class="found arrow_1_3"></div>
+			<div id="div_line_1_4" class="found line_1_4"></div>
+			<div id="div_arrow_1_4" class="found arrow_1_4"></div>
+			<div id="div_1_7" class="found m_1_7"></div>
+			<div id="div_1_8" class="found m_1_8"></div>
+			<p id="div_text_1_2" class="p text_1_2">参考帧</p>
+			<div id="div_1_9" class="found m_1_9"></div>
+			<div id="div_1_10" class="found m_1_10"></div>
+			<div id="div_1_11" class="found m_1_11"></div>
+			<div id="div_1_12" class="found m_1_12"></div>
+			<p id="div_text_1_3" class="p text_1_3">非参考帧</p>
+			<div id="div_line_1_5" class="found line_1_5"></div>
+			<div id="div_arrow_1_5" class="found arrow_1_5"></div>
+			<div id="div_line_1_6"  class="found line_1_6"></div>
+			<div id="div_arrow_1_6" class="found arrow_1_6"></div>
+			<div id="div_box_1_3" class="found box_1_3">标准编解码器</div>
+
+
+			<div id="div_line_2_1" class="found line_2_1"></div>
+			<div id="div_line_2_2" class="found line_2_2"></div>
+			<div id="div_arrow_2_2" class="found arrow_2_2"></div>
+			<div id="div_line_2_3" class="found line_2_3"></div>
+			<div id="div_arrow_2_3" class="found arrow_2_3"></div>
+			<div id="div_2_1" class="found m_2_1"></div>
+			<div id="div_2_2" class="found m_2_2"></div>
+			<p id="div_text_2_1" class="p text_2_1">增强层(高频)</p>
+			<div id="div_2_seg_1" class="found m_2_seg_1"></div>
+			<div id="div_2_seg_2" class="found m_2_seg_2"></div>
+			<p id="div_text_2_2" class="p text_2_2" >边缘检测</p>
+			<div id="div_2_3" class="found m_2_3"></div>
+			<div id="div_2_4" class="found m_2_4"></div>
+			<p id="div_text_2_3" class="p text_2_3">参考帧</p>
+			<div id="div_line_2_4" class="found line_2_4"></div>
+			<div id="div_arrow_2_4" class="found arrow_2_4"></div>
+			<div id="div_box_2_1" class="found box_2_1">升采样</div>
+			<div id="div_line_2_5" class="found line_2_5"></div>
+			<div id="div_arrow_2_5" class="found arrow_2_5"></div>
+			<div id="div_2_5" class="found m_2_5"></div>
+			<div id="div_2_6" class="found m_2_6"></div>
+			<p id="div_text_2_4" class="p text_2_4">基本层(低频)</p>
+			<div id="div_box_2_3" class="found box_2_3"></div>
+			<div id="div_patch_arrow_1" class="found patch_arrow_1"></div>
+			<div id="div_box_2_4" class="found box_2_4"></div>
+			<div id="div_box_2_5" class="found box_2_5"></div>
+			<div id="div_box_2_6" class="found box_2_6"></div>
+			<div id="div_patch_arrow_2" class="found patch_arrow_2"></div>
+			<div id="div_box_2_7" class="found box_2_7"></div>
+			<div id="div_box_2_8" class="found box_2_8"></div>
+			<div id="div_line_2_6" class="found line_2_6"></div>
+			<div id="div_arrow_2_6" class="found arrow_2_6"></div>
+			<p id="div_text_2_5" class="p text_2_5">非边<br/>缘信息</p>
+			<div id="div_line_2_7" class="found line_2_7"></div>
+			<div id="div_arrow_2_7" class="found arrow_2_7"></div>
+			<div id="div_line_2_8" class="found line_2_8"></div>
+			<div id="div_arrow_2_8" class="found arrow_2_8"></div>
+			<div id="div_line_2_9" class="found line_2_9"></div>
+			<div id="div_arrow_2_9" class="found arrow_2_9"></div>
+			<p id="div_text_2_6" class="p text_2_6">边缘信息</p>
+			<div id="div_2_7" class="found m_2_7"></div>
+			<div id="div_2_8" class="found m_2_8"></div>
+			<div id="div_2_9" class="found m_2_9"></div>
+			<div id="div_2_10" class="found m_2_10"></div>
+			<div id="div_box_2_11" class="found box_2_11">···</div>
+			<div id="div_box_2_12" class="found box_2_12">···</div>
+			<div id="div_2_11" class="found m_2_11"></div>
+			<div id="div_2_12" class="found m_2_12"></div>
+			<div id="div_2_13" class="found m_2_13"></div>
+			<div id="div_2_14" class="found m_2_14"></div>
+			<div id="div_line_2_10" class="found line_2_10"></div>
+			<div id="div_arrow_2_10" class="found arrow_2_10"></div>
+			<div id="div_line_2_11" class="found line_2_11"></div>
+			<div id="div_arrow_2_11" class="found arrow_2_11"></div>
+			<div id="div_box_2_13" class="found box_2_13">稀疏算法</div>
+			<div id="div_box_2_14" class="found box_2_14">边缘检测</div>
+			<div id="div_line_2_12" class="found line_2_12"></div>
+			<div id="div_arrow_2_12" class="found arrow_2_12"></div>
+			<div id="div_line_2_13" class="found line_2_13"></div>
+			<div id="div_arrow_2_13" class="found arrow_2_13"></div>
+			<div id="div_dic_1" class="found dic_1"></div>
+			<div id="div_dic_2" class="found dic_2"></div>
+			<div id="div_dic_3" class="found dic_3"></div>
+			<div id="div_dic_4" class="found dic_4"></div>
+			<p id="div_text_2_7" class="p text_2_7">2D</p>
+			<p id="div_text_2_8" class="p text_2_8">3D</p>
+			<p id="div_text_2_9" class="p text_2_9">增强层字典</p>
+			<p id="div_text_2_10" class="p text_2_10">基本层字典</p>
+
+			<div id="div_line_3_2" class="found line_3_2"></div>
+			<div id="div_arrow_3_2" class="found arrow_3_2"></div>
+			<p id="div_text_3_1" class="p text_3_1"><br/>显示顺序:<br/>解码顺序:</p>
+
+			<div id="div_3_5" class="found m_3_5"></div>
+			<div id="div_3_6" class="found m_3_6"></div>
+			<p id="div_text_3_2" class="p text_3_2">参考帧<br/>1,2<br/>1,2</p>
+			<div id="div_3_seg_1" class="found m_3_seg_1"></div>
+			<div id="div_3_seg_2" class="found m_3_seg_2"></div>
+			<div id="div_line_3_9" class="found line_3_9"></div>
+			<div id="div_arrow_3_9" class="found arrow_3_9"></div>
+			<p id="div_text_3_3" class="p text_3_3">稀疏<br/>表示</p>
+			<div id="div_line_3_10" class="found line_3_10"></div>
+			<div id="div_arrow_3_10" class="found arrow_3_10"></div>
+			<p id="div_text_3_4" class="p text_3_4">增强层重建</p>
+			<div id="div_box_3_1" class="found box_3_1">α</div>
+			<div id="div_3_h_1" class="found m_3_h_1"></div>
+			<div id="div_3_h_2" class="found m_3_h_2"></div>
+
+			<div id="div_3_7" class="found m_3_7"></div>
+			<div id="div_3_8" class="found m_3_8"></div>
+			<p id="div_text_3_5" class="p text_3_5">参考帧(下一帧序列)<br/>9,10<br/>9,10</p>
+			<div id="div_3_seg_3" class="found m_3_seg_3"></div>
+			<div id="div_3_seg_4" class="found m_3_seg_4"></div>
+			<div id="div_line_3_11" class="found line_3_11"></div>
+			<div id="div_arrow_3_11" class="found arrow_3_11"></div>
+			<div id="div_line_3_12" class="found line_3_12"></div>
+			<div id="div_arrow_3_12" class="found arrow_3_12"></div>
+			<div id="div_box_3_2" class="found box_3_2">α</div>
+			<div id="div_3_h_3" class="found m_3_h_3"></div>
+			<div id="div_3_h_4" class="found m_3_h_4"></div>
+
+			<div id="div_3_9" class="found m_3_9"></div>
+			<div id="div_3_10" class="found m_3_10"></div>
+			<p id="div_text_3_8" class="p text_3_8">非参考帧<br/>5,6<br/>3,4</p>
+			<div id="div_3_seg_5" class="found m_3_seg_5"></div>
+			<div id="div_3_seg_6" class="found m_3_seg_6"></div>
+			<div id="div_line_3_3" class="found line_3_3"></div>
+			<div id="div_arrow_3_3" class="found arrow_3_3"></div>
+			<div id="div_line_3_4" class="found line_3_4"></div>
+			<div id="div_arrow_3_4" class="found arrow_3_4"></div>
+			<div id="div_line_3_13" class="found line_3_13"></div>
+			<div id="div_arrow_3_13" class="found arrow_3_13"></div>
+			<div id="div_line_3_14" class="found line_3_14"></div>
+			<div id="div_arrow_3_14" class="found arrow_3_14"></div>
+			<div id="div_box_3_3" class="found box_3_3">α</div>
+			<div id="div_3_h_5" class="found m_3_h_5"></div>
+			<div id="div_3_h_6" class="found m_3_h_6"></div>
+			<div id="div_line_3_19" class="found line_3_19"></div>
+			<div id="div_line_3_20" class="found line_3_20"></div>
+			<div id="div_line_3_21" class="found line_3_21"></div>
+			<div id="div_arrow_3_21" class="found arrow_3_21"></div>
+			<p id="div_text_3_11" class="p text_3_11">字典更新</p>
+
+
+			<div id="div_3_11" class="found m_3_11"></div>
+			<div id="div_3_12" class="found m_3_12"></div>
+			<p id="div_text_3_12" class="p text_3_12">非参考帧<br/>3,4<br/>5,6</p>
+			<div id="div_3_seg_7" class="found m_3_seg_7"></div>
+			<div id="div_3_seg_8" class="found m_3_seg_8"></div>
+			<div id="div_line_3_5" class="found line_3_5"></div>
+			<div id="div_arrow_3_5" class="found arrow_3_5"></div>
+			<div id="div_line_3_6" class="found line_3_6"></div>
+			<div id="div_arrow_3_6" class="found arrow_3_6"></div>
+			<div id="div_line_3_15" class="found line_3_15"></div>
+			<div id="div_arrow_3_15" class="found arrow_3_15"></div>
+			<div id="div_line_3_16" class="found line_3_16"></div>
+			<div id="div_arrow_3_16" class="found arrow_3_16"></div>
+			<div id="div_box_3_4" class="found box_3_4">α</div>
+			<div id="div_3_h_7" class="found m_3_h_7"></div>
+			<div id="div_3_h_8" class="found m_3_h_8"></div>
+			<div id="div_line_3_22" class="found line_3_22"></div>
+			<div id="div_line_3_23" class="found line_3_23"></div>
+			<div id="div_line_3_24" class="found line_3_24"></div>
+			<div id="div_arrow_3_24" class="found arrow_3_24"></div>
+
+			<div id="div_3_13" class="found m_3_13"></div>
+			<div id="div_3_14" class="found m_3_14"></div>
+			<p id="div_text_3_15" class="p text_3_15">非参考帧<br/>7,8<br/>7,8</p>
+			<div id="div_3_seg_9" class="found m_3_seg_9"></div>
+			<div id="div_3_seg_10" class="found m_3_seg_10"></div>
+			<div id="div_line_3_7" class="found line_3_7"></div>
+			<div id="div_arrow_3_7" class="found arrow_3_7"></div>
+			<div id="div_line_3_8" class="found line_3_8"></div>
+			<div id="div_arrow_3_8" class="found arrow_3_8"></div>
+			<div id="div_line_3_17" class="found line_3_17"></div>
+			<div id="div_arrow_3_17" class="found arrow_3_17"></div>
+			<div id="div_line_3_18" class="found line_3_18"></div>
+			<div id="div_arrow_3_18" class="found arrow_3_18"></div>
+			<div id="div_box_3_5" class="found box_3_5">α</div>
+			<div id="div_3_h_9" class="found m_3_h_9"></div>
+			<div id="div_3_h_10" class="found m_3_h_10"></div>
+			<div id="div_line_3_25" class="found line_3_25"></div>
+			<div id="div_line_3_27" class="found line_3_27"></div>
+			<div id="div_arrow_3_27" class="found arrow_3_27"></div>
+
+
+			<div id="div_line_4_1" class="found line_4_1"></div>
+			<div id="div_arrow_4_1" class="found arrow_4_1"></div>
+			<div id="div_line_4_2" class="found line_4_2"></div>
+			<div id="div_arrow_4_2" class="found arrow_4_2"></div>
+			<div id="div_box_4_1" class="found box_4_1">&nbsp综合&nbsp输出</div>
+			<div id="div_4_1" class="found m_4_1"></div>
+			<div id="div_4_2" class="found m_4_2"></div>
+			<div id="div_4_3" class="found m_4_3"></div>
+			<div id="div_4_4" class="found m_4_4"></div>
+			<div id="div_4_5" class="found m_4_5"></div>
+			<div id="div_4_6" class="found m_4_6"></div>
+			<div id="div_4_7" class="found m_4_7"></div>
+			<div id="div_4_8" class="found m_4_8"></div>
+			<div id="div_4_9" class="found m_4_9"></div>
+			<div id="div_4_10" class="found m_4_10"></div>
+			<div id="div_4_11" class="found m_4_11"></div>
+			<div id="div_4_12" class="found m_4_12"></div>
+
+
+			<p><input type="button" id="testBtn" class="button"
+				style="position:absolute;margin-left:550px;margin-top:-30px;width:90px;background:red
+				"value="Stop"></p>
+			<button class="button" onclick="setReload()" style="position:absolute;margin-left:650px;margin-top:-30px;width:90px">Replay</button>
+		</div>
+	</div>
+	<div class="section" id="section2" style="height:610px">
+		<h1 class="detail_h"> Example</h1>
+		<br>
+		<select class="button" id="select" onchange="check()">
+			<option value="0" selected>BlowingBubbles R:416x240 F:50</option>
+			<option value="1">BQMall R:832x480 F:60</option>
+			<option value="2">Foreman R:352x288 F:30</option>
+			<option value="3">ParkScene R:1920x1080 F:24</option>
+		</select>
+		<div style="position:relative;width:50%;height:608px;left:0;top:10px;z-index:100">
+			<p class="detail_p">Original Video</p>
+			<OBJECT id="re1" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+				codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" 
+				WIDTH="600" HEIGHT="500" name="r"> 
+				<PARAM NAME=movie VALUE="swf/BlowingBubbles.swf"> 
+				<PARAM NAME=quality VALUE=high> 
+				<PARAM NAME=bgcolor VALUE=#FFFFFF> 
+				<EMBED id="r1" src="swf/BlowingBubbles.swf" quality=high bgcolor=#FFFFFF WIDTH="400" HEIGHT="300" 
+				NAME="foreman" ALIGN="" TYPE="application/x-shockwave-flash" 
+				PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" loop="false" play="false">
+				</EMBED> 
+			</OBJECT>
+		</div>
+		<div style="position:relative;width:50%;height:350px;left:50%;top:-600px;z-index:100">
+			<p class="detail_p">Reconstructed Video</p>
+			<OBJECT id="re2" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+				codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" 
+				WIDTH="600" HEIGHT="500" name="re"> 
+				<PARAM NAME=movie VALUE="swf/re_BlowingBubbles.swf"> 
+				<PARAM NAME=quality VALUE=high> 
+				<PARAM NAME=bgcolor VALUE=#FFFFFF>
+				<EMBED id="r2" src="swf/re_BlowingBubbles.swf" quality=high bgcolor=#FFFFFF WIDTH="400" HEIGHT="300" 
+				NAME="re_foreman" ALIGN="" TYPE="application/x-shockwave-flash" 
+				PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" loop="false" play="false">
+				</EMBED> 
+			</OBJECT>
+			<button id="#play" style="position:relative;left:-900px;top:55px;font-size:22px" onclick="play()">Play</button>
+			<p id="select_detail" class="detail_p" style="position:relative;left:-400px;top:25px;width:800px">Video Name:BlowingBubbles, Resolution:416x240, Frequency:50Hz</p>
+		</div>
+	</div>
+	<div class="section" id="section3" style="height:610px">
+		<h1 class="detail_h"> Download</h1>
+		<br>
+		<h1 class="detail_sub">Bibliography</h1>
+		<br>
+		<p class="detail_p"><a href="downloads/CSVT-Sparse Spatio-Temporal Representation with Adaptive Regularized Dictionary Learning for Low Bit-Rate Video Coding1.pdf" target="_blank">CSVT-Sparse Spatio-Temporal Representation with Adaptive Regularized Dictionary Learning for Low Bit-Rate Video Coding1.pdf</a></p>
+		<br>
+		<h1 class="detail_sub">Examples</h1>
+		<br>
+		<p class="detail_p"><a href="downloads/BlowingBubbles_416x240_50.rar" target="_blank">BlowingBubbles+416x240+50.rar</a></p>
+		<p class="detail_p"><a href="downloads/BQMall_832x480_60.rar" target="_blank">BQMall+832x480+60.rar</a></p>
+		<p class="detail_p"><a href="downloads/foreman_352x288_30.rar" target="_blank">Foreman+352x288+30.rar</a></p>
+		<p class="detail_p"><a href="downloads/ParkScene_1920x1080_24.rar" target="_blank">ParkScene+1920x1080+24.rar</a></p>
+	</div>
+</div>
+
+	<script type="text/javascript" src="js/animation_button.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="js/javascript.fullPage.js"></script>
+	<script type="text/javascript">
+		fullpage.initialize('#fullpage', {
+			anchors: ['first', 'second', 'third', 'fourth'],
+				onLeave: function(index, nextIndex, direction){
+					if(nextIndex == 1){
+						parent.document.getElementById('1').style="color:red;background:#0090F9";
+						parent.document.getElementById('2').style="color:#606060;background:#0090F9";
+						parent.document.getElementById('3').style="color:#606060;background:#0090F9";
+						parent.document.getElementById('4').style="color:#606060;background:#0090F9";
+						parent.choose = 1;
+					}
+					else if(nextIndex == 2){
+						parent.document.getElementById('1').style="color:#606060;background:#0090F9";
+						parent.document.getElementById('2').style="color:red;background:#0090F9";
+						parent.document.getElementById('3').style="color:#606060;background:#0090F9";
+						parent.document.getElementById('4').style="color:#606060;background:#0090F9";
+						parent.choose = 2;
+					}
+					else if(nextIndex == 3){
+						parent.document.getElementById('1').style="color:#606060;background:#0090F9";
+						parent.document.getElementById('2').style="color:#606060;background:#0090F9";
+						parent.document.getElementById('3').style="color:red;background:#0090F9";
+						parent.document.getElementById('4').style="color:#606060;background:#0090F9";
+						parent.choose = 3;
+					}
+					else if(nextIndex == 4){
+						parent.document.getElementById('1').style="color:#606060;background:#0090F9";
+						parent.document.getElementById('2').style="color:#606060;background:#0090F9";
+						parent.document.getElementById('3').style="color:#606060;background:#0090F9";
+						parent.document.getElementById('4').style="color:red;background:#0090F9";
+						parent.choose = 4;
+					}
+				}
+		});
+	</script>
+</body>
+</html>
